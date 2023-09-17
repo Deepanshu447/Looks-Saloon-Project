@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Ubuntu:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Roboto', sans-serif; */
+     /* font-family: 'Ubuntu', sans-serif; */
+}
+
+:root{
+    --heading-font: 'Ubuntu', sans-serif;
+    --para-font: 'Roboto', sans-serif;
+     /* font-family: 'Ubuntu', sans-serif; */
+
+     --heading-color:#0B132B;
+     --p-color:white;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+/* colors main container---------------------- ---------------------------------------*/
+
+.colors-men-container{
+    margin: 0 auto;
+    /* border: 1rem solid gray; */
+    width: 70%;
+    /* padding: 0 10vw; */
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+    background-color: ivory;
+    padding: 2rem 1rem;
+}
+
+/* ------------------head box of main container---------------------------------------- */
+
+.colors-men-container h1{
+    font-size: 4rem;
+    letter-spacing: 3px;
+   font-family:var(--heading-font) ;
+   margin-bottom: 1.5rem;
+   color: rgb(4, 4, 4);
+   text-shadow: 4px 1px 1px rgb(246, 243, 243);
+}
+
+
+
+.head-img img{
+    width: 100%;
+    height: 50rem;
+}
+
+
+
+.head-box p{
+    font-size: 1.1rem;
+    font-family:var(--para-font) ;
+    color:var(--heading-color);
+   
+    font-weight: bolder;
+    margin: 0 3rem;
+}
+
+.head-box p span{
+    margin: 0 .5rem;
+}
+
+.head-img{
+    display: flex;
+    justify-content:space-between;
+    padding: 0 3rem;
+    
+}
+
+
+
+/* ----------------style description section of main container-----------------------  */
+
+.style-description{
+    /* display: flex;
+    gap: 1rem;
+    justify-content: flex-start; */
+    padding: 4rem;
+}
+
+.style-description .editor-info{
+    display: flex;
+    gap: 1rem;
+    height: 6rem;
+    align-items: center;
+    padding-left: 1.7rem;
+    /* border:  2px solid blue; */
+   
+}
+
+.style-description .editor-info img{
+    width: 7rem;
+    
+   
+}
+
+.style-description .editor-info p{
+    font-size: 1.2rem;
+    font-family: var(--para-font);
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-weight: bolder;
+    
+   
+}
+
+.style-description .editor-info .editer-name{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-bottom: 0.5rem;
+}
+
+/* .editer-name .border{
+             border-top: 3px solid transparent;
+            border-image: linear-gradient(to right, rgb(248, 166, 3), rgb(255, 87, 4));
+            border-image-slice: 1;
+} */
+
+.description-text{
+    margin-top: 3.5rem;
+    background-color: black;
+    opacity: 0.7;
+    border-radius: 1rem;
+   
+    padding: 1rem 1rem;
+    
+    /* border:  2px solid brown; */
+}
+
+.description-text p{
+    font-size: 2rem;
+    font-family: var(--para-font);
+    margin: 2rem 0;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    word-spacing: 2px;
+    color:white;
+    
+}
+
+
+/* image box css start here--------------------------------- */
+
+.color-images-box{
+   
+    /* border:  2px solid indianred; */
+    /* margin-top: 1rem; */
+    padding: 1rem 0;
+    width: 60%;
+    /* border-right: 5px solid transparent;
+            border-image: linear-gradient(to top, rgb(249, 168, 6), rgb(240, 209, 96));
+            border-image-slice: 1; */
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+            
+
+}
+
+
+
+.color-images-box .color-image{
+    display: flex;
+    justify-content: space-between;
+    /* border: 4px solid salmon; */
+    gap: 4rem;
+    
+}
+
+.color-images-box .color-image img{
+    /* width: 100%; */
+    height: 40rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px 0px rgb(18, 18, 18);
+    cursor: pointer;
+    transition: all .3s linear;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+/* .color-images-box .color-image img:hover{
+    transform: rotateY(-10deg);
+    -webkit-transform: scale(1.3);
+	transform: scale(1.1);
+} */
+
+
+.color-images-box .img-color-description{
+    /* border:  2px solid salmon; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.color-images-box .img-color-name{
+    display: flex;
+    height: 6rem;
+    align-items: center;
+    justify-content: start;
+    /* border: 2px solid saddlebrown; */
+    gap: 3rem;
+}
+
+.color-images-box .img-color-name span{
+    padding:  1rem 0.5rem;
+    font-size: 2.2rem;
+    font-family: var(--para-font);
+    font-weight: bolder;
+    /* border: 3px solid transparent;
+     border-image: linear-gradient(to right, green, lightgreen);
+     border-image-slice: 1; */
+     border-style: double;
+     border-width: 5px;
+     color:black;
+     
+}
+
+.color-images-box .img-color-name h2{
+    font-size: 2.5rem;
+    font-family: var(--heading-font);
+    font-weight: bolder;
+    letter-spacing: 2px;
+    color: black;
+}
+    
+
+.img-color-description p{
+    font-size: 1.7rem;
+    font-family: var(--para-font);
+    letter-spacing: 3px;
+    font-weight: bold;
+    word-spacing: 3px;
+    line-height: 2.8rem;
+    color: black;
+    
+}
+
+
+/*  responsive code for 550px width   --------------------------------*/
+
+@media only screen and (max-width:550px){
+
+    html{
+        font-size: 56.5%;
+    }
+
+    .colors-men-container{
+        margin: 0 auto;
+        padding: 2rem 2rem;
+        width: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        align-items: center;
+        background-color: ivory;
+    }
+
+    .colors-men-container .h1{
+        font-size: 2.2rem;
+        letter-spacing: 2px;
+       text-align: center;
+    }
+
+    .colors-men-container .head-box{
+       width: 100%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 0rem;
+    }
+    .colors-men-container .post-date{
+        /* display: flex;
+        gap: 1rem; */
+        width: 100%;
+        margin-left: 19.5rem;
+        
+    }
+    .colors-men-container .head-box .post-date p{
+        font-size: 0.9rem;
+    }
+    .head-img{
+        margin: 0.5rem 0;padding: 0;
+    }
+    .head-img img{
+        width: 100%;
+        height: 30rem;
+    }
+
+    .style-description{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0;
+    }
+      #para p{
+        font-size: 1rem;
+    }
+
+    .style-description .editor-info .editer-name p{
+        font-size: 1rem;
+    }
+
+    .style-description .description-text{
+        padding: 0rem 0.5rem;
+    }
+
+    
+
+    .style-description .editor-info{
+        padding: 0;
+    }
+    .style-description .editor-info img{
+        width: 5rem;
+    }
+
+    /* color box------- */
+
+    .color-images-box{
+        padding: 1rem 0;
+        width: 100%;
+        /* border-right: 5px solid transparent; */
+                /* border-image: linear-gradient(to top, rgb(249, 168, 6), rgb(240, 209, 96));
+                border-image-slice: 1; */
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                border: none;
+
+    }
+
+    
+
+    .color-images-box .color-image{
+        display: flex;
+        justify-content: center;
+        /* border: 4px solid salmon; */
+        
+        
+    }
+
+    .color-images-box .color-image img{
+        /* width: 100%; */
+        height: 25rem;
+        border-radius: 1rem;
+        box-shadow: 0px 0px 10px 0px rgb(18, 18, 18);
+        cursor: pointer;
+        transition: all .3s linear;
+        
+    }
+
+   
+
+    .color-images-box .img-color-name{
+        display: flex;
+        height: 5rem;
+        align-items: center;
+        justify-content: start;
+        /* border: 2px solid saddlebrown; */
+        gap: 2rem;
+    }
+
+    .color-images-box .img-color-name span{
+        padding:  0.5rem ;
+        font-size: 1.7rem;
+        
+         
+         border-width: 2px;
+         
+
+    }
+
+   
+    .color-images-box .img-color-name h2{
+        font-size: 1.5rem;
+        
+    }
+
+    .img-color-description p{
+        font-size: 1.1rem;
+        word-spacing: normal;
+        letter-spacing: 2px;   
+    }
+
+}
+
+/*  responsive code for 770px width   --------------------------------*/
+
+@media only screen and (max-width:770px){
+    html{
+        font-size: 56.5%;
+    }
+
+    .colors-men-container{
+        margin: 0 auto;
+        padding: 2rem 2rem;
+        width: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        align-items: center;
+      
+    }
+
+    .colors-men-container h1{
+        font-size: 3rem;
+        letter-spacing: 2px;
+       text-align: center;
+       margin: 0 2rem;
+    }
+
+    .head-box{
+       width: 100%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        /* border: 2px solid green; */
+       
+    }
+   
+
+    .post-date{
+        /* align-self: self-start;
+        margin-left: 2.5rem; */
+        /* border: 2px solid salmon; */
+       margin-right: 17rem;
+    }
+    
+    .head-box p span{
+        margin: 0rem 0.5rem;
+    } 
+    .style-description .description-text p{
+        font-size: 1.1rem;
+    }
+
+    .color-images-box{
+        width: 100%;
+        border:none;
+    }
+
+    .img-color-description p{
+        font-size: 1.2rem;
+    }
+}
+
+/*  responsive code for 1000px width   --------------------------------*/
+
+
+@media only screen and (max-width:1000px){
+    html{
+        font-size: 56.5%;
+    }
+
+    .colors-men-container{
+        /* margin: 0 auto; */
+        padding: 2rem 2rem;
+        width: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        align-items: center;
+      
+    }
+
+    .color-images-box{
+        border: none;
+    }
+
+    .colors-men-container h1{
+        font-size: 3rem;
+        
+       text-align: center;
+       margin: 0 2rem;
+    }
+
+    .style-description .description-text p{
+        font-size: 1.5rem;
+    }
+     .editor-info .editer-name p{
+        font-size: 1.5rem;
+
+    }
+
+    
+    .head-box .post-date p{
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+    }
+
+}
+

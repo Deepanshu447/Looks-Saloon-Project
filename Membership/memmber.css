@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Ubuntu&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: var(--font); */
+}
+
+html{
+    font-size: 62.;
+}
+
+
+:root {
+    --font:  'Montserrat', sans-serif;;;
+}
+
+
+/*paybox start*/
+
+.big{
+
+    text-align: center;
+    /* height: auto; */
+    display: flex;
+    padding:  0 5%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.silver{
+    /* margin-top: 30px; */
+    width: 350px;
+    /* border: 2px solid silver ; */
+    margin: 0 0 50px;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.7);
+    transition: all 0.3s linear;
+    transform: scale(1);
+    padding-top: 1.3rem;
+
+
+}
+.fa-circle-check{
+    color: green;
+}
+.fa-xmark{
+    color: red;
+}
+
+.GOLD{
+    padding-top: 1.3rem;
+
+    width: 350px;
+    /* border: 2px solid gold ; */
+    margin: 0 0 50px;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.7);
+    transition: all 0.3s linear;
+    transform: scale(1);
+}
+
+.price{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 13px;
+}
+
+.top h2{
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;;
+    letter-spacing: 3px;
+}
+
+.save{
+    display: flex;
+    width: 250px;
+    /* border: 2px solid red; */
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 13px;
+}
+.save-price{
+    font-size: 17px;
+    font-family: var(--font);
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-decoration: line-through;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+.save-pr1{
+    font-size: 12px;
+    background-color: silver;
+    padding: 6px;
+    border-radius: 50%;
+    align-self: flex-end;
+    color: white;
+    font-family: 'Montserrat', sans-serif;;
+}
+.save-pr2{
+    font-size: 12px;
+    background-color:gold;
+    padding: 6px;
+    border-radius: 50%;
+    align-self: flex-end;
+    color: white;
+}
+.save-pr3{
+    font-size: 12px;
+    background-color:blue;
+    padding: 6px;
+    border-radius: 50%;
+    align-self: flex-end;
+    color: white;
+}
+
+.new-price{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 300px;
+}
+.new-price .amount{
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.new-price .months{
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;;
+    font-weight: bolder;
+    letter-spacing: 2px;
+
+}
+
+.m-btn{
+    margin-top: 16px;
+}
+
+.m-btn a{
+    display: inline-block;
+    width: 200px;
+    padding: 4px 13px;
+    text-decoration: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: 25px;
+    letter-spacing: 3px;
+    font-family: 'Montserrat', sans-serif;;
+    /* border: 1px solid green; */
+    border-radius: 6px;
+    transition: all 0.3s linear;
+}
+.m-btn  .diamond{
+    background: linear-gradient(160deg,#28efb7,#30f689,#5dbea3);
+    color: rgb(249, 151, 4);
+    box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+    transition: all 0.5s linear;
+    
+}
+
+.m-btn .diamond:hover{
+    background:linear-gradient(160deg,#5dbea3,#30f689,#28efb7) ;
+}
+
+.m-btn .gold{
+    /* background-color: #5dbea3; */
+    background: linear-gradient(160deg,#28efb7,#30f689,#5dbea3);
+    color: rgb(249, 151, 4);
+    box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+    transition: color 0.3s ease-in;
+}
+.m-btn .silverr{
+    background: linear-gradient(160deg,#28efb7,#30f689,#5dbea3);
+    color: rgb(249, 151, 4);
+    box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+    transition: color 0.3s ease-in;
+}
+
+
+.DIAMOND{
+    width: 350px;
+    /* border: 2px solid blue ; */
+    margin: 0 0 50px;
+    box-shadow:0px 0px 10px rgba(0,0,0,0.7);
+    transition: all 0.3s linear;
+    transform: scale(1);
+    padding-top: 1.3rem;
+}
+
+.DIAMOND:hover{
+    transform: scale(1.1);
+}
+
+.GOLD:hover{
+    transform: scale(1.1);
+
+}
+.silver:hover{
+    transform: scale(1.1);
+}
+
+/*:hover .main{
+
+    border-radius: 10%;
+    width: 32%;
+}
+.heading{
+
+    height: 3rem;
+    font-size:2rem;
+    border: radius left right 10%; 
+    color: black;
+    text-transform: uppercase;
+}*/
+
+.head1{
+   color: silver;
+    
+}
+
+
+.head2{
+   color: gold;
+    
+}
+
+
+.head3{
+   color: rgb(86, 172, 230);
+    
+}
+
+.months{
+    color: #fca918;
+}
+
+
+.discription{
+    display: flex;
+    /* padding-left: 50px; */
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+   gap: 10px;
+   padding: 18px ;
+   padding-left: 7rem;
+}
+
+.discription h2{
+    font-size:16px;
+    font-family: var(--font);
+    text-transform: uppercase;
+}
+.discription p{
+    line-height: 29px;
+    font-size: 13px;
+    font-family: var(--font);
+    text-transform: capitalize;
+}
+.fa-solid{
+
+    padding-right: 5px;
+}
+ /*paybox end*/
+

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact-page</title>
+    <link rel="stylesheet" href="contact.css">
+
+    <!-- cdn link for font-awesome=== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- index css file================== -->
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+
+    <!-- nab bar start here======================== -->
+    <div class="header   ">
+
+        <div class="logo">
+            <img src="../imgaes/looks-salon.png" alt="logo">
+
+        </div>
+
+        <div class="menu_bar">
+            <ul class="items">
+                <li><a href="../home page/home.html">home</a></li>
+                <li><a href="../about/about_us.html">about</a></li>
+                <li><a href="../H-styles/h-styles.html"> Hairstyles</a> </li>
+                <li><a href="./contact.html">contact</a></li>
+            </ul>
+        </div>
+
+
+
+        <div class="btn">
+            <a href="../Membership/Memmber.html">membership</a>
+        </div>
+
+        <div class=" mobile-icons">
+            <i class="fa-solid fa-bars mobile-btn "></i>
+            <i class="fa-sharp fa-solid fa-xmark monile-btn "></i>
+        </div>
+    </div>
+
+
+
+
+    <!-- this is about container======== -->
+    <div class="contact-container">
+
+        <h1 id="contact-us">contact us</h1>
+
+        <div class="form-container">
+            <form action="" onsubmit="return myfun()" class="form" id="form">
+
+                <div class="form-wrapper">
+                    <label for="" id="name">name</label>
+                    <input type="text" id="username" placeholder="enter your name" required>
+                    <small id="name-er">error</small>
+                </div>
+
+                <div class="form-wrapper">
+                    <label for="" id="email">email</label>
+                    <input type="email" id="useremail" placeholder="enter your email" required>
+                    <small id="email-er">error</small>
+                </div>
+
+                <div class="form-wrapper">
+                    <label for="" id="contact">contact</label>
+                    <input type="number" id="usernumber" placeholder="enter your number" >
+                    <small id="contact-er">error</small>
+                </div>
+                <div class="form-wrapper">
+                    <label for="" id="city">city</label>
+                    <input type="text" id="usercity" placeholder="enter your city name" required>
+                </div>
+
+                <div class="form-wrapper">
+                    <label for="" id="gender">gender</label>
+                    <select name="" id="usergender" required>
+                        <option value="">--select--</option>
+                        <option value="MALE">male</option>
+                        <option value="FEMALE">female</option>
+                    </select>
+                </div>
+
+                
+
+                <div class="form-wrapper">
+                    <label for="" id="message">message</label>
+                    <textarea name="comment" id="comment">Enter text here...</textarea>
+                </div>
+
+                <div id="send-query">
+                    <input type="submit" id="submit" value="send query">
+                </div>
+
+
+            </form>
+        </div>
+
+        <div class="map-container">
+            <div class="contact-info">
+
+                <h2>contact info</h2>
+                <div class="c-info">
+
+                    <div class="call-info">
+                        <i class="fa  fa-phone iconss"></i>
+                        <span>call</span>
+                        <p>+345-756-987</p>
+                    </div>
+                    <div class="email-info">
+                        <i class="fa fa-envelope iconss"></i>
+                        <span>mail</span>
+                        <p>lookssalon11@gmail. com</p>
+                    </div>
+                    <div class="add-info">
+                        <i class="fa fa-house iconss"></i>
+                        <span>address</span>
+                        <p>lajpat-nagar, new delhi 110017</p>
+                    </div>
+                    
+                </div>
+
+            </div>
+            <div class="map">
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112133.06057804199!2d77.15334765!3d28.56501355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2b0274e8957%3A0xe930677da8ed4418!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1687599513308!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+        </div>
+
+
+    
+
+        <!-- contact container ends here=========================== -->
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-box1">
+                <h3>beard collection</h3>
+                <ul class="footer-items">
+
+                    <li><a href="./beard-men/beard.htm">Square </a></li>
+                    <li><a href="./beard-men/beard.htm">Round </a></li>
+                    <li><a href="./beard-men/beard.htm">Rectangular</a></li>
+                </ul>
+
+            </div>
+            <div class="footer-box1">
+                <h3>Hairstyles for men</h3>
+                <ul class="footer-items">
+                    <li><a href="../All hairstyle for men/long hair for men/men-long.html">long</a></li>
+                    <li><a href="../All hairstyle for men/medium hair for men/men-short.html">medium</a></li>
+                    <li><a href="../All hairstyle for men/short hairstyle/men-short.html">short</a></li>
+
+
+                </ul>
+            </div>
+            <div class="footer-box1">
+                <h3>Hairstyles for women</h3>
+                <ul class="footer-items">
+                    <li><a href="../All hairstyle for women/Long hairstyle/women_long_haircut.html">long</a></li>
+                    <li><a href="./All hairstyle for women/medium hairstyle/women_medium_haircut.html">medium</a></li>
+                    <li><a href="../All hairstyle for women/Short haircuts for women/women_short_haircut.html">short</a>
+                    </li>
+
+
+                </ul>
+            </div>
+            <div class="footer-box1">
+                <h3>colors </h3>
+                <ul class="footer-items">
+                    <li><a href="../colors/colors for men/colors-men.html">colors for men</a></li>
+                    <li><a href="../colors/colors for women/colors-women.html">colors for women</a></li>
+
+                </ul>
+            </div>
+
+            <div class="menu-footer">
+                <ul>
+                    <li><a href="../home page/home.html">home</a></li>
+                    <li><a href="../about/about_us.html">about</a></li>
+                    <li><a href="../H-styles/h-styles.html">hairstyle</a></li>
+                    <li><a href="../contact us/contact.html">contact</a></li>
+                    <li><a href="../help hairstyle/help.html">help&care</a></li>
+                    <li><a href="#">services</a></li>
+                    <!-- <li><a href="#">privacy & policy</a></li> -->
+                </ul>
+            </div>
+
+
+
+        </div>
+        <div class="copyright-section">
+            <div class="copyright-text">
+                <p> copyright<span>&#169;</span> 2023 - 2025 All rights reserved.</p>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin-in social-links "></i></a>
+                <a href="#"><i class="fab fa-youtube social-links"></i></a>
+                <a href="#"><i class="fab fa-instagram social-links"></i></a>
+                <a href="#"><i class="fab fa-facebook social-links"></i></a>
+                <a href="#"><i class="fab fa-twitter social-links"></i></a>
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <!-- contact js file -->
+    <script src="./contact.js"></script>
+    <!-- index js file=============== -->
+    <script src="../js/index.js"></script>
+
+</body>
+
+</html>

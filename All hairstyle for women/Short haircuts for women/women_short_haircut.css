@@ -1,0 +1,259 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+:root{
+    --font: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/* body{
+    display: flex;
+    justify-content: center;
+    background-color:whitesmoke;
+    
+} */
+.short_container{
+    width: 70%;
+    height: auto;
+    /* border: 2px solid red; */
+    padding: 2rem 2.2rem;
+    margin: 0 auto;
+   
+    
+}
+
+.heading-text{
+    display: flex;
+    height: 7rem;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid green; */
+    /* gap: 2rem; */
+    /* background-color: #182825; */
+    padding-left: 1rem;
+    border-radius: 10px;
+    opacity: 0.8;
+    color: rgb(4, 4, 4);
+    /* box-shadow: 0px 0px 6px 0px rgba(0,0, 0, 0.5); */
+}
+
+span{
+    
+   color: rgb(15, 15, 15);
+    font-size: 1.5rem;
+    
+}
+
+h1{
+    /* margin: 3rem 0; */
+    font-family:var(--font) ;
+    font-size: 3.2rem;
+    letter-spacing: 4px;
+    
+}
+
+.short-container-box{
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 6rem; */
+    flex-direction: column;
+    gap: 2rem;
+    /* border:  2px solid blue; */
+    
+    height: auto;
+    padding: 1.3rem 0;
+    margin-top: 1rem;
+    
+}
+
+.short-text-box{
+    /* border: 2px solid gray; */
+    padding: 3rem 0;
+}
+
+.style-heading{
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    /* background-color: #182825; */
+    gap: 2rem;
+    padding: 1.2rem 0;
+}
+h2{
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 3px;
+    /* margin-bottom: 1rem; */
+    /* background-color: #182825; */
+    opacity: 0.8;
+    color: black;
+    /* padding: 0rem 1rem; */
+    border-radius: 0.5rem;
+}
+p{
+    font-family: var(--font);
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-top: 2rem;
+    text-transform: capitalize;
+}
+ .img-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 60rem; */
+    height: auto;
+    
+}
+
+/* class="long-style-img" */
+
+.short-style-img{
+    width: 50%;
+    /* height: 55rem; */
+    height: 40rem;
+    border: 2px solid black;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+} 
+
+
+
+/* responsive code start here------------------------------------------------------------- */
+
+
+/* responsive code for 550px width screen */
+
+@media only screen and (max-width:550px){
+    html{
+        font-size: 56.5%;
+    }
+
+    /* body{
+        display: flex;
+       justify-content: center;
+       background-color:whitesmoke;
+    } */
+
+    .short_container{
+        width: 90%;
+        height: auto;
+        /* border: 2px solid red; */
+        padding: 2rem 1rem;  
+    }
+
+    .heading-text{
+        
+        height: 6rem;
+        
+    }
+
+    h1{
+        /* margin: 3rem 0; */
+        font-family:var(--font) ;
+        font-size: 1.6rem;
+        letter-spacing: 4px;
+        
+    }
+    /* .fringe{
+        font-size: 1.7rem;
+    } */
+
+    span{
+        padding:  0.2rem ;
+        
+        font-size: 1.2rem;
+        
+    }
+
+    .short-container-box{
+
+        
+        height: auto;
+        padding: 1rem 0;
+        margin-top: 1rem;
+        
+    }
+
+    h2{
+        font-size: 1.7rem;
+       
+    }
+    p{
+        font-family: var(--font);
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        margin-top: 2rem;
+        text-transform: capitalize;
+    }
+
+    .short-style-img{
+        width: 80%;
+        height: 25rem;
+    }
+
+    .dummy-para{
+        display: none;
+    }
+}
+
+
+
+
+
+
+/* .mediumhair_slider{
+    overflow: hidden;
+    width: 1200px;
+    height: 500px;
+    margin: auto;
+}
+@keyframes slideshow{
+    0%{left:0px;}
+    10%{left:0px;}
+    20%{left:1200px;}
+    30%{left:1200px;}
+    40%{left:2400px;}
+    50%{left:2400px;}
+    60%{left:1200px;}
+    70%{left:1200px;}
+    80%{left:0px;}
+    90%{left:0px;}
+    100%{left:0px;}
+
+}
+.slide_img{
+    width: 3600px;
+    height: 500px;
+    position: relative;
+    margin: 0 0 0 -2400px;
+    animation-name: slideshow;
+    animation-duration: 33s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+.img_contain{
+    height: 500px;
+    width: 1200px;
+    position: relative;
+    float: left;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+} */
+

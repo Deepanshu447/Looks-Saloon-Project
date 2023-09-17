@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background: #55ffe5; */
+    font-size: 14px;
+}
+
+.bigcontainer{
+    padding: 1.7rem 2rem;
+}
+
+
+.heading{
+font-size: 1.5rem;
+font-family: sans-serif;
+font-weight: bold;
+    
+    text-align: center;
+    
+    /* border: 1px solid black; */
+    margin-bottom: 2rem;
+    letter-spacing: 2px;
+}
+.contact-box{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    
+}
+.contact-left{
+    /* flex-basis: 60%; */
+    /* padding: 40px 60px; */
+}
+.contact-left h3{
+    font-size: 1.7rem;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: black;
+    letter-spacing: 1px;
+}
+
+.contact-left label{
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.contact-right{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    /* gap: 1.2rem; */
+}
+.contact-right table{
+     width: 100%; 
+    background-color: #C0C0C0;
+    padding: 2rem 0rem;
+    padding-left: 35rem;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    
+   
+}
+
+.contact-right h3{
+    font-size: 2.5rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.container p{
+    margin-bottom: 40px;
+}
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-row .input-group{
+    flex-basis: 45%;
+}
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #acc;
+    outline: none;
+    padding-bottom: 5px;
+}
+textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: 10px;
+    box-sizing: border-box;
+}
+label{
+    margin-bottom: 6px;
+    display: block;
+    color: #1c00b5;
+}
+button{
+    background: #1c00b5;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px rgba(28,0,181,0.3);
+    
+}
+.contact-left h3{
+    color: #1c00b5;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.contact-right h3{
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+tr td:first-child{
+    padding-right: 20px;
+}
+
+tr td{
+   padding-top: 20px;
+   
+}
+
+.map{
+    padding: 18px 0px;
+    margin-top: 20px;
+    background-color: white;
+}
+
+.map h1{
+    text-align: center;
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.map iframe{
+    width: 100%;
+}
+
+
+@media only screen and (max-width:550px) {
+
+    html{
+        font-size: 56.5%;
+    }
+
+    .bigcontainer{
+        padding: 1.7rem 1.2rem;
+        width: 100%;
+    }
+
+    .contact-box{
+        width: 100%;
+    }
+
+    .contact-left h3{
+        font-size: 2.3rem;
+        text-align: center;
+        font-family: sans-serif;
+        font-weight: bold;
+        text-transform: capitalize;
+        color: black;
+    }
+
+    /* .contact-left {
+        display: flex;
+        flex-direction: column;
+    } */
+
+    .contact-left .input-row{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-left label{
+        font-size: 1.9rem;
+        color: black;
+        font-family: sans-serif;
+        font-weight: bold;
+        margin: 1.3rem 0;
+        text-transform: capitalize;
+    }
+    .contact-left .input-group input{
+        width: 100%;
+    }
+
+    .contact-right{
+        display: flex;
+        /* justify-content: center; */
+        flex-direction: column;
+        align-items: center;
+        /* gap: 1.2rem; */
+    }
+    .contact-right table{
+         
+        background-color: red;
+        padding: 2rem 0rem;
+        /* padding-left: 35rem; */
+        font-size: 1.1rem;
+        text-transform: capitalize;
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+        font-family: sans-serif;
+        font-weight: bold;
+        text-transform: capitalize;
+        
+       
+    }
+
+    
+        
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

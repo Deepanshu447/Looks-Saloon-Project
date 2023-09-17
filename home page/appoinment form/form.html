@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form </title>
+    <link rel="stylesheet" href="form.css">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-caption">
+            <h1>Let's not wait for the "Perfect Look"</h1>
+            <p>Book An Appointment Now!</p>
+        </div>
+
+        <form action="" class="form" id="form" onsubmit="return validateform()">
+
+            <div class="form-control">
+                <i class="fa-solid fa-user left-icon"></i>
+                <input type="text" placeholder="enter you name" id="username">
+                <i class="fa-solid fa-circle-check right-icon" id="name-check"></i>
+                <i class="fa-solid fa-exclamation right-icon" id="name-excla"></i>
+                <small class="error" id="name-error">error</small>
+            </div>
+    
+            <div class="form-control">
+                <i class="fa-solid fa-envelope left-icon"></i>
+                <input type="tel" placeholder="enter you email" id="email">
+                <i class="fa-solid fa-circle-check right-icon" id="e-check"></i>
+                <i class="fa-solid fa-exclamation right-icon" id="e-cross"></i>
+                <small class="error" id="email-error">error</small>
+            </div>
+    
+            <div class="form-control">
+                <i class="fa-solid fa-phone left-icon"></i>
+                <input type="text" placeholder="enter you number" id="number">
+                <i class="fa-solid fa-circle-check right-icon" id="num-check"></i>
+                <i class="fa-solid fa-exclamation right-icon" id="num-cross"></i>
+                <small class="error" id="num-error">error</small>
+            </div>
+
+            <div class="form-control">
+                <i class="fa-solid fa-calendar-days left-icon"></i>
+                <input type="date" placeholder="select date">
+            </div>
+
+            <div class="form-control">
+                <i class="fa-solid fa-person left-icon2"></i>
+                <select name="" id="select1" onchange="populate()">
+                    <option value="">gender</option>
+                    <option value="MALE">male</option>
+                    <option value="FEMALE">female</option>
+                </select>
+            </div>
+
+            <div class="form-control">
+                <i class="fa-solid fa-scissors left-icon2"></i>
+                <select name="" id="select2">
+                    <option value="">service type</option>
+
+                </select>
+            </div>
+
+            <div class="form-control">
+                <i class="fa-solid fa-location-dot left-icon2"></i>
+                <select name="" id="select3" onchange="myfun()">
+                    <option value="">-- select city --</option>
+                    <option value="DELHINCR">delhi ncr</option>
+                    <option value="MUZZAFFARPUR">muzzaffarpur</option>
+                    <option value="NEWDELHI">new delhi</option>
+                    <option value="PATNA">patna</option>
+                    <option value="UTTARPARDESH">uttarpardesh</option>
+                    <option value="BHOPAL">bhopal</option>
+                    <option value="BENGALURU">bengaluru</option>
+                    <option value="HARIYANA">hariyana</option>
+                </select>
+            </div>
+
+            <div class="form-control">
+                <select name="" id="select4">
+                    <option value="">--choose location--</option>
+
+                </select>
+            </div>
+
+            <div id="btn">
+                <input type="submit" id="submit" value="book appoiment">
+            </div>
+
+
+
+        </form>
+
+       
+
+
+
+
+    </div>
+    
+
+
+
+    <script src="form.js"></script>
+</body>
+</html>

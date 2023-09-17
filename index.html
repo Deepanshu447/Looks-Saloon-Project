@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home-page</title>
+
+    <!-- CDN link for fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- link for css stylesheet -->
+    <link rel="stylesheet" href="css/index.css">
+    <!-- css file for home page -->
+    <link rel="stylesheet" href="./home page/home.css">
+
+    <!-- css file for form -->
+    <link rel="stylesheet" href="./home page/appoinment form/form.css">
+
+
+</head>
+
+<body>
+
+    <!-----------------------header------------navbar------------------------ -----------------------header-------------navbar------------------------->
+
+    <div class="header   ">
+
+        <div class="logo">
+            <img src="imgaes/looks-salon.png" alt="logo">
+
+        </div>
+
+        <div class="menu_bar">
+            <ul class="items">
+                <li><a href="./home page/home.html">home</a></li>
+                <li><a href="./about/about_us.html">about</a></li>
+                <li><a href="./H-styles/h-styles.html"> Hairstyles</a> </li>
+                <li><a href="./contact us/contact.html">contact</a></li>
+            </ul>
+        </div>
+
+
+
+        <div class="btn">
+            <a href="./Membership/Memmber.html">membership</a>
+        </div>
+
+        <div class=" mobile-icons">
+            <i class="fa-solid fa-bars mobile-btn "></i>
+            <i class="fa-sharp fa-solid fa-xmark monile-btn "></i>
+        </div>
+    </div>
+
+    <!-------- image slider for home page---------------------- ------------------------------------------------------------->
+    <!--    slider container start here ============================= -->
+    <div class="slider-container">
+        <div class="image-container">
+
+            <img src="./home page/images/Now-Open-12.jpg" alt="img" class="img">
+            <img src="./home page/images/Opening-soon-15.jpg" alt="img" class="img">
+            <img src="./home page/images/LooksKart_home_banner.jpg" alt="banner-img" class="img">
+
+
+        </div>
+
+        <div class="handle">
+            <i class="fa-sharp fa-solid fa-angles-right btn next"></i>
+            
+            <i class="fa-sharp fa-solid fa-angles-left btn prev"></i>
+        </div>
+
+
+        <!-- slider container end here==================================== -->
+    </div>
+
+    <!--  home page main container start here======================================= -->
+
+    <div class="home-container">
+        <!-- looks section============================== -->
+        <div class="looks-box">
+            <div class="first-box">
+                <a href="#"><img src="./home page/images/L1.jpg" alt=""></a>
+                <a href="#"><img src="./home page/images/L2.jpg" alt=""></a>
+                <a href="#"><img src="./home page/images/L3.jpg" alt=""></a>
+            </div>
+            <div class="second-box">
+                <a href="#"><img src="./home page/images/L4.jpg" alt=""></a>
+                <a href="#"><img src="./home page/images/L5.jpg" alt=""></a>
+                <a href="#"><img src="./home page/images/L6.jpg" alt=""></a>
+            </div>
+        </div>
+
+        <!-- our services section================================ -->
+        <div class="service-text">
+            <h1>our services</h1>
+        </div>
+        <div class="service-section">
+
+            <div class="service-images">
+                <a href="#"> <img src="./home page/images/gents.jpg" alt="img"></a>
+                <a href="#"><img src="./home page/images/ladies.jpg" alt="img"></a>
+                <p id="gents">gents</p>
+                <p id="ladies">ladies</p>
+            </div>
+            <div class="container">
+                <div class="form-caption">
+                    <h1>Let's not wait for the "Perfect Look"</h1>
+                    <p>Book An Appointment Now!</p>
+                </div>
+        
+                <form action="" class="form" id="form" onsubmit="return validateform()">
+        
+                    <div class="form-control">
+                        <i class="fa-solid fa-user left-icon"></i>
+                        <input type="text" placeholder="enter you name" id="username">
+                        <i class="fa-solid fa-circle-check right-icon" id="name-check"></i>
+                        <i class="fa-solid fa-exclamation right-icon" id="name-excla"></i>
+                        <small class="error" id="name-error">error</small>
+                    </div>
+            
+                    <div class="form-control">
+                        <i class="fa-solid fa-envelope left-icon"></i>
+                        <input type="tel" placeholder="enter you email" id="email">
+                        <i class="fa-solid fa-circle-check right-icon" id="e-check"></i>
+                        <i class="fa-solid fa-exclamation right-icon" id="e-cross"></i>
+                        <small class="error" id="email-error">error</small>
+                    </div>
+            
+                    <div class="form-control">
+                        <i class="fa-solid fa-phone left-icon"></i>
+                        <input type="text" placeholder="enter you number" id="number">
+                        <i class="fa-solid fa-circle-check right-icon" id="num-check"></i>
+                        <i class="fa-solid fa-exclamation right-icon" id="num-cross"></i>
+                        <small class="error" id="num-error">error</small>
+                    </div>
+        
+                    <div class="form-control">
+                        <i class="fa-solid fa-calendar-days left-icon"></i>
+                        <input type="date" placeholder="select date">
+                    </div>
+        
+                    <div class="form-control">
+                        <i class="fa-solid fa-person left-icon2"></i>
+                        <select name="" id="select1" onchange="populate()">
+                            <option value="">gender</option>
+                            <option value="MALE">male</option>
+                            <option value="FEMALE">femal</option>
+                        </select>
+                    </div>
+        
+                    <div class="form-control">
+                        <i class="fa-solid fa-scissors left-icon2"></i>
+                        <select name="" id="select2">
+                            <option value="">service type</option>
+        
+                        </select>
+                    </div>
+        
+                    <div class="form-control">
+                        <i class="fa-solid fa-location-dot left-icon2"></i>
+                        <select name="" id="select3" onchange="myfun()">
+                            <option value="">-- select city --</option>
+                            <option value="DELHINCR">delhi ncr</option>
+                            <option value="MUZZAFFARPUR">muzzaffarpur</option>
+                            <option value="NEWDELHI">new delhi</option>
+                            <option value="PATNA">patna</option>
+                            <option value="UTTARPARDESH">uttarpardesh</option>
+                            <option value="BHOPAL">bhopal</option>
+                            <option value="BENGALURU">bengaluru</option>
+                            <option value="HARIYANA">hariyana</option>
+                        </select>
+                    </div>
+        
+                    <div class="form-control">
+                        <select name="" id="select4">
+                            <option value="">--choose location--</option>
+        
+                        </select>
+                    </div>
+        
+                    <div id="btn">
+                        <input type="submit" id="submit" value="book appoiment">
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+        <div class="home-description-container">
+            <h1>Explore the Realm of Beauty with Looks Salon</h1>
+            <div class="description-center">
+                <p>
+                    With over 162 branches nationally and internationally, Looks salon is a premium beauty salon for men
+                    and women who desire to look the best every day. Getting a makeover not only changes the appearance
+                    of a person but also brings back the lost confidence and Looks Salon would take pride in being a
+                    part of it. From beauty to grooming services, we provide a tremendous range of facilities that
+                    touches every dimension of beauty and hair treatments. Our repertoire of professional experts makes
+                    sure that all your beauty and hair questions are answered, and you leave the salon with a big smile
+                    on your face.
+                </p>
+                <p class="mobile-none-text">
+                    With over 6000 employees engaged in transforming your look, we make sure that all the services
+                    provided at our salons meet the international standards. Through our advice and solutions from the
+                    expertise in this array, we aim at giving the best services through our state-of-art facilities. Our
+                    professional stylists and beauty experts are constantly updated with the latest trends and fashion
+                    advices that help them to work efficiently and deliver outstanding results!
+                </p>
+                <p class="mobile-none-text">
+                    Give us an opportunity to serve you once, we are sure you'll love to come back to us again and be
+                    our esteemed customer forever. Fill the form or call us to book an appointment now!
+                </p>
+            </div>
+        </div>
+
+        <!-- home page main container end here=========================== -->
+    </div>
+
+
+
+    <!-----------------------------footer start here------------------------------------------ ------------------------------------------------------------------------------------------>
+    <footer>
+        <div class="footer-container">
+
+            
+
+
+            <div class="footer-box1">
+                <h3>beard collection</h3>
+                <ul class="footer-items">
+
+                    <li><a href="./beard-men/beard.htm">Square </a></li>
+                    <li><a href="./beard-men/beard.htm">Round </a></li>
+                    <li><a href="./beard-men/beard.htm">Rectangular</a></li>
+                </ul>
+            </div>
+            <div class="footer-box1">
+                <h3>Hairstyles for men</h3>
+                <ul class="footer-items">
+                    <li><a href="./All hairstyle for men/long hair for men/men-long.html">long</a></li>
+                    <li><a href="./All hairstyle for men/medium hair for men/men-short.html">medium</a></li>
+                    <li><a href="./All hairstyle for men/short hairstyle/men-short.html">short</a></li>
+
+
+                </ul>
+            </div>
+            <div class="footer-box1">
+                <h3>Hairstyles for women</h3>
+                <ul class="footer-items">
+                    <li><a href="./All hairstyle for women/Long hairstyle/women_long_haircut.html">long</a></li>
+                    <li><a href="./All hairstyle for women/medium hairstyle/women_medium_haircut.html">medium</a></li>
+                    <li><a href="./All hairstyle for women/Short haircuts for women/women_short_haircut.html">short</a>
+                    </li>
+
+
+                </ul>
+            </div>
+            <div class="footer-box1">
+                <h3>colors </h3>
+                <ul class="footer-items">
+                    <li><a href="./colors/colors for men/colors-men.html">colors for men</a></li>
+                    <li><a href="./colors/colors for women/colors-women.html">colors for women</a></li>
+
+                </ul>
+            </div>
+
+            <div class="menu-footer">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">hairstyle</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">help&care</a></li>
+                    <li><a href="#">services</a></li>
+                    <!-- <li><a href="#">privacy & policy</a></li> -->
+                </ul>
+            </div>
+
+
+
+        </div>
+        <div class="copyright-section">
+            <div class="copyright-text">
+                <p> copyright<span>&#169;</span> 2023 - 2025 All rights reserved.</p>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin-in social-links "></i></a>
+                <a href="#"><i class="fab fa-youtube social-links"></i></a>
+                <a href="#"><i class="fab fa-instagram social-links"></i></a>
+                <a href="#"><i class="fab fa-facebook social-links"></i></a>
+                <a href="#"><i class="fab fa-twitter social-links"></i></a>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/index.js"></script>
+    <!-- js file for home page -->
+    <script src="./home page/home.js"></script>
+    <!-- form js file -->
+    <script src="./home page/appoinment form/form.js"></script>
+</body>
+
+</html>

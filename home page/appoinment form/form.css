@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Montserrat:wght@200&family=Open+Sans&family=Poppins:wght@600&family=Ubuntu:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --m-font: 'Montserrat', sans-serif;
+    --a-font:'Open Sans', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(44, 30, 1);
+} */
+
+.container{
+    width: 60%;
+    background-color: white;
+    padding: 2rem 3rem;
+    margin: 0 auto;
+    border:  2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+.container .form-caption{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.form-caption h1{
+    font-size: 3.5rem;
+    font-family: var(--a-font);
+    font-weight: bold;
+}
+.form-caption p{
+    font-size: 2rem;
+    font-family: var(--a-font);
+    font-weight: bold;
+}
+
+
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.form-control{
+    width: 43%;
+    position: relative;
+    margin-bottom: 3.4rem;
+}
+
+.form-control input{
+    width: 100%;
+    padding: 0.8rem 2.2rem;
+    font-size: 1.5rem;
+    font-family: var(--a-font);
+    margin-bottom: 4px;
+   border: none;
+   outline: none;
+   border-bottom: 2px solid green;
+   text-transform: capitalize;
+   color: #d3af37;
+    
+
+}
+
+
+
+.form-control .select option{
+    padding: 2rem;
+    font-size: 1.5rem;
+    font-family: var(--a-font);
+    width: 50%;
+}
+.form-control select{
+    width: 100%;
+    padding: 0.8rem 2.2rem;
+    font-size: 1.5rem;
+    font-family: var(--a-font);
+    margin-bottom: 4px;
+   border: none;
+   outline: none;
+   border-bottom: 2px solid green;
+   text-transform: capitalize;
+}
+
+/* ::placeholder{
+    position: relative;
+    color: red;
+} */
+
+/* ::placeholder::after{
+    color: black;
+    top: 100%;
+    content: " ";
+    width: 50px;
+    height: 50px;
+    font-size: 1rem;
+} */
+
+.form-control .left-icon{
+    position: absolute;
+    top: 23%;
+    left: 0;
+    font-size: 1.1rem;
+    color: #d3af37;
+}
+
+
+.form-control .left-icon2{
+    position: absolute;
+    top: 33%;
+    left: 0;
+    font-size: 1.1rem;
+    color: #d3af37;
+}
+
+.form-control .right-icon{
+    position: absolute;
+    right: 1.5%;
+    top: 23%;
+    font-size: 1.3rem;
+    display: none;
+}
+
+.form-control small{
+    font-size: 1.1rem;
+    font-family: var(--a-font);
+    font-weight: bold;
+    margin-left: 0.5rem;
+    
+}
+
+.form-control #name-error{
+    visibility: hidden;
+}
+
+.form-control #email-error{
+    visibility: hidden;
+}
+
+.form-control #num-error{
+    visibility: hidden;
+}
+
+#btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#submit{
+    text-align: center;
+    padding: 1rem 1.6rem;
+    /* width: 30%; */
+    color:white;
+    background-color:#d3af37;
+    font-size: 18px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 6px;
+    border: none;
+}
+
+
+/* media query for responsive ===========================*/
+
+
+
+@media only screen and (max-width:1000px){
+
+    html{
+        font-size: 56.5%;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .form{
+        display: flex;
+       flex-direction: column;
+        align-items: center;
+        /* gap: 3rem; */
+       
+    }
+    .form-control{
+        width: 60%;
+        position: relative;
+        
+    }
+
+}
+
+@media only screen and (max-width:550px){
+    html{
+        font-size: 56.5%;
+    }
+
+    .container{
+        width: 100%;
+        padding: 2rem 2rem;
+        gap: 2rem;
+    }
+
+    .container .form-caption{
+        align-items: flex-start;
+        gap: 1.1rem;
+    }
+    .container .form-caption p{
+        align-self: center;
+    }
+
+    .form-caption h1{
+        font-size: 2.2rem;
+    }
+    .form-caption p{
+        font-size: 1.7rem;
+    }
+
+    .form{
+        display: flex;
+       flex-direction: column;
+       
+       
+        
+       
+    }
+    .form-control{
+        width: 100%;
+        position: relative;
+        margin-bottom: 1.5rem;
+       
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
